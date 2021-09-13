@@ -133,7 +133,7 @@ function getWinningLines(squares) {
 function calculateWinner(squares) {
     const line = getWinningLines(squares);
 
-    return line ? line[0] : null;
+    return line ? squares[line[0]] : null;
 }
 
 export default Game;
